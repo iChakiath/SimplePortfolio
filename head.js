@@ -11,7 +11,7 @@ let limit = '20';
 // Authorization. Key from spotify api website, must send a waypoint through their settings
 // https://developer.spotify.com/documentation/general/guides/authorization-guide/
 function authorize() {
-  const client_id = '622d6b73ea7a4993bce0009d6c601886';
+  const client_id = '11658d424e3d4eb1bcf78b7b536ad695';
   const redirect_uri = 'https://iChakiath.github.io/SimplePortfolio/';
   const scopes = 'user-top-read playlist-modify-public playlist-modify-private';
 
