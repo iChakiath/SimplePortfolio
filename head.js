@@ -17,7 +17,7 @@ function authorize() {
 
 // Store the date
 const d = new Date();
-let date = [d.getMonth() +  1, d.getDate()];
+let date = [d.getMonth() +  1, d.getDate(), d.getFullYear()];
 date = date.join('/');
 
   // Create a Token, and finalize it
@@ -237,19 +237,7 @@ function disableControls() {
 
 // add some listeners to the controls
 // Again, "id=$"
-function initialize() {
-  $('#timeForm input').on('change', function() {
-    updateRange();
-    refresh();
-  });
-  const slider = document.getElementById("numResponses");
-  slider.oninput = function() {
-    limit = $('#numResponses').val().toString();
-    $('#number').html("Number of results: " + limit);
-  }
 
-  $('#numResponses').on('change', refresh);
-}
 
   // Enable or disable control based on user's authentication
   if (access_token) {
