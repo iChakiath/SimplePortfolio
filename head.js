@@ -17,7 +17,7 @@ function authorize() {
 
 // Store the date
 const d = new Date();
-let date = [d.getMonth() +  1, d.getDate(), d.getFullYear()];
+let date = [d.getMonth() +  1, d.getDate()];
 date = date.join('/');
 
   // Create a Token, and finalize it
