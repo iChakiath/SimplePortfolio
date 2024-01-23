@@ -12,7 +12,7 @@ let limit = '20';
 // https://developer.spotify.com/documentation/general/guides/authorization-guide/
 function authorize() {
   const client_id = '622d6b73ea7a4993bce0009d6c601886';
-  const redirect_uri = 'https://iChakiath.github.io/spotify-stats/';
+  const redirect_uri = 'https://iChakiath.github.io/SimplePortfolio/';
   const scopes = 'user-top-read playlist-modify-public playlist-modify-private';
 
 // Store the date
